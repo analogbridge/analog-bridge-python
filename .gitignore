@@ -7,3 +7,4 @@
 *.egg
 *.class
 .idea/
+analogbridge.egg-info/

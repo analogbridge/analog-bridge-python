@@ -11,22 +11,15 @@ try:
 except ImportError:
     from distutils.command.build_py import build_py
 
-path, script = os.path.split(sys.argv[0])
-os.chdir(os.path.abspath(path))
-
-install_requires = ['requests >= 0.8.8', 'json']
-
-with open('LONG_DESCRIPTION.rst') as f:
-    long_description = f.read()
-
+install_requires = ['requests >= 0.8.8']
 
 setup(
     name='analogbridge',
     cmdclass={'build_py': build_py},
     version='0.1',
-    description='Analog Bridge python bindings',
-    long_description=long_description,
-    author='Analog Bridge',
+    description='Analog Bridge Python bindings',
+    long_description='Enable users to import any analog media format directly into your app with the Analog Bridge API',
+    author='Eugene Gekhter',
     author_email='support@analogbridge.io',
     url='https://github.com/analogbridge/analog-bridge-python',
     packages=['analogbridge'],
