@@ -53,7 +53,8 @@ We can easily retrieve a customer's details using their `customer_id`, for
 example to find a customer with details with id `cus_12345678`
 
 ```python
-resp = analogbridge.Customer.find('cus_12345678')```
+resp = analogbridge.Customer.find('cus_12345678')
+```
 
 ### Retrieve all customers
 
