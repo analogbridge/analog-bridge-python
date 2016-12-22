@@ -56,7 +56,7 @@ example to find a customer with details with id `cus_12345678`
 resp = analogbridge.Customer.find('cus_12345678')
 ```
 
-### Retrieve all customers
+#### Retrieve all customers
 
 Analog Bridge provides an interface to retrieve all your customers very easily.
 To retrieve all of your customers, you can use
@@ -125,7 +125,9 @@ To retrieve the list of import ready orders, we can use
 resp = analogbridge.Order.import_ready()
 ```
 
-### Listing Product
+### Product
+
+####  Listing products
 
 To retrieve the `products` simply use the following interface
 
